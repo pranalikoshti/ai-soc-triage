@@ -1,0 +1,31 @@
+[
+  {"_time":"2026-05-20T14:00:00Z","severity":"HIGH",
+   "sourcetype":"suricata","src_ip":"185.220.101.34",
+   "dest_ip":"192.168.1.10","dest_port":"22",
+   "alert_signature":"ET SCAN SSH Brute Force Attempt",
+   "host":"firewall-01","category":"Attempted Information Leak"},
+
+  {"_time":"2026-05-20T14:03:00Z","severity":"CRITICAL",
+   "sourcetype":"suricata","src_ip":"5.199.162.220",
+   "dest_ip":"192.168.1.25","dest_port":"443",
+   "alert_signature":"ET MALWARE CobaltStrike Beacon Observed",
+   "host":"firewall-01","category":"Malware Command and Control"},
+
+  {"_time":"2026-05-20T14:07:00Z","severity":"HIGH",
+   "sourcetype":"suricata","src_ip":"91.92.248.35",
+   "dest_ip":"192.168.1.15","dest_port":"8080",
+   "alert_signature":"ET EXPLOIT Apache Log4Shell RCE Attempt CVE-2021-44228",
+   "host":"firewall-01","category":"Attempted Administrator Privilege Gain"},
+
+  {"_time":"2026-05-20T14:11:00Z","severity":"HIGH",
+   "sourcetype":"windows_security","src_ip":"192.168.1.99",
+   "dest_ip":"192.168.1.200","dest_port":"445",
+   "alert_signature":"Multiple Failed SMB Authentication Attempts",
+   "host":"dc-01","category":"Attempted Information Leak"},
+
+  {"_time":"2026-05-20T14:15:00Z","severity":"CRITICAL",
+   "sourcetype":"zeek","src_ip":"194.165.16.73",
+   "dest_ip":"192.168.1.10","dest_port":"80",
+   "alert_signature":"DNS Tunneling Observed — High Query Volume",
+   "host":"zeek-sensor","category":"Potentially Bad Traffic"}
+]
